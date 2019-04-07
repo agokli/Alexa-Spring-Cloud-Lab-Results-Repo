@@ -23,8 +23,9 @@ logging:
 #        uri: http://localhost:8090
         predicates:
         - Path=/labresults/**
-#        filters:
+        filters:
 #        - RewritePath=/labresults/(?<path>.*), /$\{path}
+        - RewritePath=/labresults/(?.*), /$\{path}
       
  
   
