@@ -19,7 +19,8 @@ logging:
           enabled: true
       routes:
       - id: labresults-service
-        uri: lb://labresults-service
+#        uri: lb://labresults-service
+        uri: http://localhost:8091
         predicates:
         - Path=/labresults/**
         filters:
