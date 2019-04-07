@@ -20,7 +20,7 @@ logging:
       routes:
       - id: labresults-service
 #        uri: lb://labresults-service
-        uri: http://localhost:8091
+        uri: http://localhost:8090
         predicates:
         - Path=/labresults/**
         filters:
