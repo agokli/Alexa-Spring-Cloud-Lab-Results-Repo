@@ -27,9 +27,9 @@ logging:
 predicates:
         - Path=/labresults/**
         filters:
-#        - RewritePath=/labresults/(?<path>.*), /$\{path}
+        - RewritePath=/labresults/(?<path>.*), /$\{path}
 #        - RewritePath=/labresults/(?.*), /$\{path}
-         - RewritePath=/labresults/(?<mrn>.*), /$\{mrn}
+#         - RewritePath=/labresults/(?<mrn>.*), /$\{mrn}
      
  
   
