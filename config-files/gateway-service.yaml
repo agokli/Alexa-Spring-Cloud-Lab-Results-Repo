@@ -5,7 +5,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
+logging:
+  pattern: 
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+              
 logging:
   level:
     com.netflix.discovery: 'ON'
@@ -20,8 +23,8 @@ logging:
       routes:
       - id: labresults-service
         uri: lb://labresults-service
-#        uri: http://localhost:8090
-        predicates:
+
+predicates:
         - Path=/labresults/**
         filters:
 #        - RewritePath=/labresults/(?<path>.*), /$\{path}
