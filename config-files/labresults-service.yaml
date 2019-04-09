@@ -10,10 +10,3 @@ eureka:
          pattern: 
            console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
            
-spring.data.mongodb.uri=mongodb://localhost:27017/LabRecordsDB
-logging.level.org.springframework.data.mongodb.core.MongoTemplate=DEBUG
-
-#logging
-logging.level.org.springframework.data=debug
-logging.level.org.springframework.data.mongodb.repository.Query=DEBUG
-logging.level.=error
