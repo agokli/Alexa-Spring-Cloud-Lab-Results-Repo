@@ -1,1 +1,3 @@
+gateway.uri.property: "http://localhost:8181"
+gateway.filter.rewritepath: "labresults/(?<mrn>.*"
 
