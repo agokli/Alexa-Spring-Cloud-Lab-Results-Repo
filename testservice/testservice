@@ -1,1 +1,2 @@
-
+welcome.message = I am here
+spring.datasource.username=abcd
