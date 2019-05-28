@@ -1,2 +1,5 @@
+#Default port is 8761
+server:
+  port: 8555
 welcome.message = I am here
 spring.datasource.username=abcd
