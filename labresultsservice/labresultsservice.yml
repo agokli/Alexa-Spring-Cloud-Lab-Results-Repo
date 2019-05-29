@@ -1,5 +1,6 @@
-server:
-  port: 8666
+server.port=${port:8181}
+spring.data.mongodb.uri=mongodb://localhost:27017/LabRecordsDB
+
 
 eureka:
   client:
