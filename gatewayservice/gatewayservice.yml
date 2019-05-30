@@ -1,36 +1,6 @@
 server:
   port: 8555
 
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-
----
-logging:
-  level:
-    com.netflix.discovery: 'ON'
-    org.springframework.cloud.gateway: 'TRACE'
 
 
-
-spring:
-  profiles: docker
-  
-server:
-  port: 8888
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
-
-logging:
-  level:
-    com.netflix.discovery: 'ON'
-    org.springframework.cloud.gateway: 'TRACE'  
   
